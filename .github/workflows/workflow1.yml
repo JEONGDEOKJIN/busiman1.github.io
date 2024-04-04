@@ -1,0 +1,21 @@
+name: Workflow 이름
+
+on:
+  push:
+    branches:
+      - 조건1-브랜치명
+  pull_request:
+    branches:
+      - 조건2-브랜치명
+
+jobs:
+  job:
+    name: Job 이름
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Step 1
+        run: echo "첫 번째 실행 명령어"
+
+      - name: Step 2
+        run: echo "두 번째 실행 명령어"
